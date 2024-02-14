@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(255, 180, 239);
+    
+}
+
+:root{
+--background-color:rgb(156, 51, 102);
+--text-color:rgb(255, 249, 253);
+
+}
+
+.flexbox{
+    background-color:var(--background-color);
+    display: flex;
+    justify-content:flex-start;
+   
+    color: var(--text-color);
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 2rem;
+
+    
+    border-radius: 1%;
+    height: 90vh;
+    padding: 1rem;
+}
+
+
+p{
+    margin-top: 2rem;
+    color: black;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+#yesButton.large {
+    transform: scale(1);
+    
+}
+
+.buttons{
+display: flex;
+position: relative;
+align-items: flex-start;
+
+
+}
+#yesButton {
+    position: relative;
+    margin-right:20px;
+    padding:10px, 20px;
+}
+
+#noButton{
+max-width: 24ch;
+}
+
+.content{
+    margin:auto auto;
+    display: flex;
+    
+}
+
+h1{
+    margin-inline: auto auto;
+    font-size: 8rem;
+    margin-top:1rem;
+    margin-bottom: 0;
+    color: rgb(255, 166, 224);
+}
+
+p{
+    color:white;
+    margin-top:2rem;
+    width: 75ch;
+}
+
+.question {
+    margin-top: 0.3rem;
+    display: flex;
+    width: fit-content;
+    
+}
+
+/*  -----------*/
+
+#hope {
+    margin-top:0.1rem;
+    
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hihi</title>
+    <link rel="stylesheet" href="some.pyt">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+<script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<body>
+     <div class="flexbox">
+        
+        <h1>Happy Valentines!!</h1>
+        <p>14th of February, the day where we show love and care for the ones we hold dearest. You have a special place in my heart like no one has ever had before. 
+            No words could ever describe how much you mean to me, yet here I am, once again trying to form my words into sentences that make sense. It's quite beautiful how we as humans, write to express our purest thoughts and emotions, don't you think At least I think so. Some do it more than others ofc, and I'm probably one of the "some's" xd</p>
+             <p id="hope">I hope you've had an amazing Valentine's day (Bob and Frederick says the same - but they are a bit dissapointed I failed to send you the link in time...hopefully you can forgive me) <br>I love you &#10084;&#10084;</p>
+        <p class="question">Sooooo do you want to be my Valentines?</p>
+        <div class="content">
+        
+        <div class="buttons">
+        <a href="yippie.html"><button id="yesButton">Yes ofc!</button></a>
+        <button id="noButton" onclick="changeText(); growYesButton()">I'm not sure...</button>
+        </div> 
+       
+    </div>
+   
+
+ <script>
+    // function changeText(){
+    //     document.getElementById("text").innerHTML = "Maybe";
+    // }
+    var textValues = ["Too curios what would happen if I click no...", "Maybe", "Possibly", "I have to think about it", "Undecided", "Uncertain", "Ambivalent", "Perhaps"];
+    var textIndex = 0;
+
+    function changeText() {
+        if (textIndex < textValues.length) {
+            document.getElementById("noButton").innerHTML = textValues[textIndex];
+            textIndex++;
+        } else {
+            textIndex = 0; // Reset index to loop through the values again
+            changeText(); // Call the function recursively to start from the beginning
+        }
+    }
+
+    var noButtonClickCount = 0;
+
+function growYesButton() {
+    
+    var yesButton = document.getElementById("yesButton");
+    noButtonClickCount++;
+  
+    yesButton.style.transform = "scale(" + (1 + 0.5 * noButtonClickCount) + ")";
+}
+
+ </script> 
+
+
+
+
+
+
+</body>
+</html>
+
+</body>
+</html>
